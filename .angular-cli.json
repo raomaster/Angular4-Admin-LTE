@@ -9,7 +9,10 @@
       "outDir": "dist",
       "assets": [
         "assets",
-        "favicon.ico"
+        "favicon.ico",
+        { "glob": "**/*", "input": "../node_modules/admin-lte/plugins", "output": "./plugins/" },
+        { "glob": "**/*", "input": "../node_modules/admin-lte/dist", "output": "./dist/" },
+        { "glob": "**/*", "input": "../node_modules/admin-lte/bootstrap", "output": "./bootstrap/" }
       ],
       "index": "index.html",
       "main": "main.ts",
